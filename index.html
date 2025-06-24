@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Would You Rather - PC Download</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Would You Rather - V1.5</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      background: #0e0e0e;
+      color: #39ff14;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: #fff;
       text-align: center;
+      overflow-x: hidden;
     }
 
     h1 {
-      font-size: 48px;
-      margin-top: 60px;
-      color: #39ff14;
-      text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+      font-size: 3rem;
+      margin-top: 80px;
+      text-shadow: 0 0 10px #39ff14;
     }
 
-    h2.version-title {
-      color: #39ff14;
-      font-size: 24px;
-      font-weight: bold;
-      text-shadow: 0 0 8px #39ff14;
-      margin-bottom: 20px;
-      margin-top: 40px;
+    h2 {
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-shadow: 0 0 8px #00ffff;
     }
 
-    .neon-button {
-      background: none;
-      border: 2px solid #ff00ff;
-      color: #ff00ff;
+    .download-btn {
+      background: #ff00ff;
+      border: none;
       padding: 15px 40px;
-      font-size: 22px;
-      cursor: pointer;
-      margin-top: 20px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      text-shadow: 0 0 5px #ff00ff;
-      box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff inset;
-    }
-
-    .neon-button:hover {
-      background-color: #ff00ff;
+      font-size: 1.2rem;
       color: black;
-      box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff inset;
+      cursor: pointer;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #ff00ff;
+      transition: 0.3s ease;
     }
 
-    .download-section {
-      margin-top: 50px;
+    .download-btn:hover {
+      box-shadow: 0 0 25px #ff00ff;
+      transform: scale(1.05);
     }
 
-    .credits {
-      margin-top: 30px;
-      font-size: 16px;
-      color: #aaaaaa;
+    footer {
+      margin-top: 100px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.imgur.com/qa5W5A1.png') repeat;
+      background-size: cover;
+      opacity: 0.1;
+      z-index: -1;
     }
   </style>
 </head>
 <body>
-  <h1>Would You Rather - PC Edition</h1>
+  <div class="stars"></div>
+  <h1>Would You Rather - Epic Edition</h1>
+  <h2>Version 1.5 Release</h2>
+  <a href="WYR_V1_5.exe" class="download-btn">Download WYR v1.5</a>
 
-  <div class="download-section">
-    <h2 class="version-title">Version 1.5 Release</h2>
-
-    <a href="dist/WYR_V1_5.exe" download>
-      <button class="neon-button">Download Now</button>
-    </a>
-
-    <p class="credits">Made with ❤️ by Aryan Kumar Badjena</p>
-  </div>
+  <footer>
+    <p>Created by Aryan Kumar<br>Version 1.5 | Neon Space Theme</p>
+  </footer>
 </body>
 </html>
